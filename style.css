@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box
+}
+
+p {
+  text-align: center;
+}
+
+p.explain {
+  max-width: 600px;
+  margin: auto;
+  padding: 5px;
+}
+
+div.svg-container {
+  text-align: center;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Art Creator</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="user_input.js"></script>
+  <script src="path.js"></script>
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <p class="explain">Creating modern art is easy! Simply specify your desired canvas size and the number of lines you wish to draw, type some text into the box, then watch as your masterpiece is created.</p>
+  <p class="explain">The drawing created is based on the settings and text specified, so the same settings and text will always produce the same drawing.</p> 
+  <p class="explain">Multiple drawings added to the same image will stack on top of each other. Simply refresh the page to start a new image.</p>
+  <p>Dimensions: 
+    <input type="text" name="canvas-x" id="canvas-x"> X <input type="text" name="canvas-y" id="canvas-y">
+  </p>
+  <p>Number of Lines: 
+    <input type="text" name="path-count" id="path-count">
+  </p>
+  <p>Seed: 
+    <textarea name="seed" id="seed" rows="5" cols="25"></textarea>
+  </p>
+  <p>
+    <button id="button">Go</button>
+  </p>
+  <div class="svg-container">
+    <svg xmlns="http://www.w3.org/2000/svg" id="output"></svg>
+  </div>
+</body>
+
+</html>
