@@ -7,10 +7,10 @@ class UserInput {
     this.seed = this.stringToInt(seed);
   }
   stringToInt(seed) {
-    this.running_sum = 0;
+    let running_sum = 0;
     for (let index = 0; index < seed.length; index++) {
-      this.running_sum += seed.charCodeAt(index);
+      running_sum += seed.charCodeAt(index);
     }
-    return this.running_sum;
+    return running_sum;
   }
 }
